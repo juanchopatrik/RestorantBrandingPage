@@ -1,0 +1,20 @@
+.contenedor {
+  border: 5px solid #e1bee7;
+  background-color: #fff1ff;
+  display: grid;
+  margin: 0 auto;
+  width: 60%;
+  /* con esta configuracion no se ajusta al ancho de la grilla
+  grid-template-columns: repeat(4, 100px); */
+  /* en esta configuracion todas las fracciones son iguales
+  grid-template-columns: repeat(4, 1fr); */
+  /* max-content es para que la fraccion ocupe lo maximo del contenido
+  min-content es para que la fraccion ocupe lo minimo del contenido */
+  grid-template-columns: 1fr 4fr max-content min-content;
+  
+}
+
+.item{
+  border: 5px solid #00bcd4;
+  font-size: 2rem;
+}

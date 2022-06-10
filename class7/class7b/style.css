@@ -1,0 +1,29 @@
+.contenedor {
+  border: 5px solid #e1bee7;
+  background-color: #fff1ff;
+  display: grid;
+  margin: 0 auto;
+  width: 60%;
+  /* autofit y auto fill ayudan a llenar el espacio disponible
+  y usa los elementos dentro del div*/
+  /* con autofit las columnas se expanden hasta llenar el 100% */
+  grid-template-columns: repeat(auto-fit, minmax(100px,2fr))  
+}
+
+.contenedor2 {
+  border: 5px solid #e1bee7;
+  background-color: #fff1ff;
+  display: grid;
+  margin: 0 auto;
+  width: 60%;
+  /* siempre mantiene el commportamiento pero si es mas pequeno se vuelve responsive 
+  agrega columnas fantasma para rellenar los espacios*/
+  grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+}
+
+
+
+.item{
+  border: 5px solid #00bcd4;
+  font-size: 2rem;
+}
